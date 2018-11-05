@@ -1,0 +1,143 @@
+html {
+  background: url(../images/background1.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+body{
+	background: url(../images/background1.jpg) no-repeat center center fixed;
+  	background-size: cover;
+}
+
+.header{
+	background-color: rgba(0,0,0,0.6);
+	display: inline-block;
+	width:50%;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+}
+h1{
+	font-size: 60px;
+	text-align: center;
+	color: white;
+	font-family: 'Bangers', Serif;
+	font-kerning: normal;
+}
+.slideshow-container {
+	max-width: 1000px;
+  	position: relative;
+  	margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+img {
+	width: 100%;
+}
+
+.grid-container{
+	display: flex;
+	max-width: 100%;
+}
+
+/*	I tried to make the columns work to fit everything in a grid like formation 
+and it looked so ugly that I commented it out and left you with 5 large images for the sake of this website*/
+/*.column{*/
+	/*flex: 50%;*/
+/*}*/
+
+/*.placement1{*/
+	/*display: inline-flex;*/
+	/*width: 50%;*/
+	
+/*}*/
+/*.placement2{*/
+	/*display:inline-flex;*/
+	/*width:30%;*/
+	
+/*}*/
+
+@keyframes blur {
+    0%, 100%  {filter:blur(0px);}
+    50% {filter:blur(20px);}
+}
+
+.placement1{
+	animation-name: blur;
+	animation-duration: 4s;
+}
+
+/*}*/
+/*.placement4{*/
+	/*display:inline-flex;*/
+	/*width:30%;*/
+	
+/*}*/
+/*.placement5{*/
+	/*display:inline-flex;*/
+	/*width:30%;	*/
+/*}*/
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 100px 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.dots {
+	text-align: center;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The slide dots*/
+.dot {
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 2px;
+  border: solid 1px white;
+  display: inline-block;
+  transition: background-color 300ms ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
